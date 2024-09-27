@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
+import Link from "next/link";
 
 export default function BackgroundBeamsWithCollisionDemo() {
   return (
@@ -23,10 +24,12 @@ export default function BackgroundBeamsWithCollisionDemo() {
         </h2>
         
         {/* Button */}
+        <Link href={'/chat'}>
         <button
           className="relative z-20 bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 text-white font-bold py-3 px-6 rounded-full hover:scale-105 transition-transform duration-300 text-lg md:text-xl lg:text-2xl">
           Chat
         </button>
+        </Link>
       </div>
     </BackgroundBeamsWithCollision>
   );
